@@ -4,8 +4,6 @@ const ccBgColor01 = document.querySelector('.cc-bg svg > g g:nth-child(1) path')
 const ccBgColor02 = document.querySelector('.cc-bg svg > g g:nth-child(2) path')
 const ccLogo = document.querySelector('.cc-logo span:nth-child(2) img')
 
-console.log(ccLogo)
-
 function setCardType(type) {
   const colors = {
     visa: ['#2D57F2', '#436D99'],
@@ -18,4 +16,4 @@ function setCardType(type) {
   ccLogo.setAttribute('src', `cc-${type}.svg`)
 }
 
-globalThis.setCardType
+globalThis.setCardType = setCardType
